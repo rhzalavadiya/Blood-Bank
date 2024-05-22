@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{84B27646-8298-41FA-A73A-2C7EE8C654C0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>project</RootNamespace>
+    <AssemblyName>project</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="about.Designer.cs">
+      <DependentUpon>about.cs</DependentUpon>
+    </Compile>
+    <Compile Include="blood_bag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="blood_bag.Designer.cs">
+      <DependentUpon>blood_bag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="blood_bag_rpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="blood_bag_rpt.Designer.cs">
+      <DependentUpon>blood_bag_rpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="blood_bankDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>blood_bankDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="blood_discard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="blood_discard.Designer.cs">
+      <DependentUpon>blood_discard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="blood_discard_rpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="blood_discard_rpt.Designer.cs">
+      <DependentUpon>blood_discard_rpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="blood_donate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="blood_donate.Designer.cs">
+      <DependentUpon>blood_donate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="blood_test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="blood_test.Designer.cs">
+      <DependentUpon>blood_test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="blood_test_rpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="blood_test_rpt.Designer.cs">
+      <DependentUpon>blood_test_rpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="boold_donate_rpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="boold_donate_rpt.Designer.cs">
+      <DependentUpon>boold_donate_rpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="change_pass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="change_pass.Designer.cs">
+      <DependentUpon>change_pass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="contact_us.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contact_us.Designer.cs">
+      <DependentUpon>contact_us.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctor.Designer.cs">
+      <DependentUpon>doctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctor_rpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctor_rpt.Designer.cs">
+      <DependentUpon>doctor_rpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="donor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="donor.Designer.cs">
+      <DependentUpon>donor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="donor_rpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="donor_rpt.Designer.cs">
+      <DependentUpon>donor_rpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stockrpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stockrpt.Designer.cs">
+      <DependentUpon>stockrpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="welcome.Designer.cs">
+      <DependentUpon>welcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mdi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdi.Designer.cs">
+      <DependentUpon>mdi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="patient.Designer.cs">
+      <DependentUpon>patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="patient_rpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="patient_rpt.Designer.cs">
+      <DependentUpon>patient_rpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="payment.Designer.cs">
+      <DependentUpon>payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="payment_rpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="payment_rpt.Designer.cs">
+      <DependentUpon>payment_rpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stock.Designer.cs">
+      <DependentUpon>stock.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="about.resx">
+      <DependentUpon>about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="blood_bag.resx">
+      <DependentUpon>blood_bag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="blood_bag_rpt.resx">
+      <DependentUpon>blood_bag_rpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="blood_discard.resx">
+      <DependentUpon>blood_discard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="blood_discard_rpt.resx">
+      <DependentUpon>blood_discard_rpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="blood_donate.resx">
+      <DependentUpon>blood_donate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="blood_test.resx">
+      <DependentUpon>blood_test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="blood_test_rpt.resx">
+      <DependentUpon>blood_test_rpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="boold_donate_rpt.resx">
+      <DependentUpon>boold_donate_rpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="change_pass.resx">
+      <DependentUpon>change_pass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="contact_us.resx">
+      <DependentUpon>contact_us.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctor.resx">
+      <DependentUpon>doctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctor_rpt.resx">
+      <DependentUpon>doctor_rpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="donor.resx">
+      <DependentUpon>donor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="donor_rpt.resx">
+      <DependentUpon>donor_rpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="patient_rpt.resx">
+      <DependentUpon>patient_rpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="payment.resx">
+      <DependentUpon>payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="payment_rpt.resx">
+      <DependentUpon>payment_rpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stock.resx">
+      <DependentUpon>stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stockrpt.resx">
+      <DependentUpon>stockrpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="welcome.resx">
+      <DependentUpon>welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mdi.resx">
+      <DependentUpon>mdi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="patient.resx">
+      <DependentUpon>patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="blood_bankDataSet.xsc">
+      <DependentUpon>blood_bankDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="blood_bankDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>blood_bankDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="blood_bankDataSet.xss">
+      <DependentUpon>blood_bankDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxCrystal">
+      <Guid>{00025600-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Crystal">
+      <Guid>{00025600-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="blood_bank.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
